@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>GRID</title>
+        <!--metaclases-->
+        <meta charset="UTF-8">
+        <meta name="author" content="Raúl Martín-Romo Sánchez">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width">
+        <meta property="og:imagen" content="Multimedia/Imagenes/Sousuke_Shirt_2">
+        <meta property="og:description" content="Aquí veras mis juegos y animes favoritos">
+        <meta property="og:title" content="Tops de Thander">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!--Internal CSS-->
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Risque&display=swap" rel="stylesheet">
+        <style>
+            body {background-image: linear-gradient(45deg, green, yellow, green);
+                background-attachment:fixed ;}
+            img {transition: 2s;
+                width: 400px; 
+                height: 400px;
+                margin: 10px;}
+            img:hover {width: 600px;}
+            button {transition: 2s;
+                background-image: linear-gradient(45deg, blue, white, blue);
+                width: 400px;
+                height: 100px;
+                font-size: 20px ;
+                font-family: Risque;
+                text-align: center;}
+            button:hover {background-image: linear-gradient(135deg, blue, white, blue);}
+            .cabeza {grid-area:header ;
+            background-color: royalblue;
+            font-size: 20px ;
+            font-family: Risque;
+            text-align: center;}
+            .abajo  {grid-area: footer;}
+            .imagen1 {grid-area: img1;}
+            .imagen2 {grid-area: img2;}
+            .imagen3 {grid-area: img3;}
+            .grid-container {display: flex;
+                align-items: center;
+                display: grid;
+                grid-template-areas:
+                'header header header'
+                'img1 img2 img3'
+                'img1 img2 img3'
+                'footer footer footer';
+                padding: 10px;
+                text-align: center;}
+            @media screen and (max-width: 800px) {
+                body {background-image: linear-gradient(45deg, red, yellow, red)}
+                img {width: 200px; 
+                    height: 200px;
+                    margin:10px}
+                img:hover {width: 300px; 
+                    height: 300px;}
+                .abajo {grid-template-rows: footer;
+                    display:none}
+                .cabeza {grid-area:header ; 
+                    display: none;}
+                .imagen1 {grid-area: img1;}
+                .imagen2 {grid-area: img2;}
+                .imagen3 {grid-area: img3;}
+                .grid-container {display: grid;
+                    grid-template-areas:
+                    'img1 img1'
+                    'img2 img2'
+                    'img3 img3';}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="cabeza">
+                <h1>Hola me llamo Lete</h1>
+            </header>
+                <img src="./img/barrel.jpg" class="img1">
+                <img src="./img/wolf.webp" class="img2">
+                <img src="./img/perros-personalidad-2.jpg" class="img3">
+                <img src="./img/michi.jpg" class="img1">
+                <img src="./img/Volibear_3.jpg" class="img2">
+                <img src="./img/Zorro_rojo_4.webp" class="img3">
+            <footer class="abajo">
+                <button onclick="alert ('hola bueas tardes')">Saludos</button>
+            </footer>
+        </div>
+    </body>
