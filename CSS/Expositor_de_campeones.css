@@ -1,0 +1,31 @@
+/*escritura*/
+h1 {color:goldenrod; 
+    text-align: center; 
+    font-size: 40px; 
+    font-family: 'Libre Baskerville', serif;}
+
+p {color:white;
+    margin: 20px;}
+
+a {margin:20px}
+
+/*encajado*/
+section {background-color: black; 
+    border-radius: 30px; 
+    border-color: goldenrod; 
+    border-style:groove; 
+    border-width: 10px;}
+
+/*clases*/
+.skills {display: flex;
+    flex-direction: row;}
+
+.habilidades {display: flex;
+    flex-direction: column;}
+/*multimedia*/
+iframe { width: 800px; 
+    height: 650px;
+    margin: 30px;}
+
+img {width: 100px;
+    height: 100px;}
