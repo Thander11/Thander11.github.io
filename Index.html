@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Tops Thander</title>
+        <!--metaclases-->
+        <meta charset="UTF-8">
+        <meta name="author" content="Raúl Martín-Romo Sánchez">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width">
+        <meta property="og:imagen" content="Imagenes/Sousuke_Shirt_2.webm">
+        <meta property="og:description" content="Aquí veras mis juegos y animes favoritos">
+        <meta property="og:title" content="Tops de Thander">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--favicon-->
+        <link rel="shortcut icon" href="Imagenes/favicon.ico">
+        <!--Internal CSS-->
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Risque&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/Estilos.css">
+        <style>
+            p {font-family:'Garamond'; 
+                color:violet;}
+            a {margin: 10px;}
+            button {color:crimson; 
+                font-family:'Risque'; 
+                margin:10px; 
+                background-image: linear-gradient(45deg, red, yellow, red);
+                width: 150px; 
+                height: 150px; 
+                border-radius: 80px; 
+                font-size: 20px;}
+            button:hover {background-image: linear-gradient(45deg, green, yellow, green);}
+            .grid-container {display: flex;
+                align-items: center;
+                display: grid;
+                grid-template-areas:
+                'header header header'
+                'nav nav nav'
+                'main main main'
+                'footer footer footer';
+                text-align: center;}
+            @media only screen and (max-width: 600px) {
+                .grid-container {display: flex;
+                align-items: center;
+                display: grid;
+                grid-template-areas:
+                'header'
+                'nav'
+                'main'
+                'footer';
+                text-align: center;}}
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="cabeza">
+                <hr>
+                <img src="Imagenes/Thander.webp">
+                <hr>
+                <h3><b>En esta web encontraras unas listas de los mejores
+                videojuegos y animes todo en base a mi opinión y experiencia. Dicho de otra forma,
+                mi top mejores juegos y animes</b></h3>
+            </header>
+            <hr>
+            <nav class="nav">
+                <h2><b>Si te iteresa también te dejo por aquí:</b></h2>
+                <a href="https://apuntesinformaticadonosocorteslete.blogspot.com/" target="blank">Mi blog </a>
+                <a href="Paginas/ElSitioDeLete/Lete.html" target="blank">Mis apuntes de informática</a>
+                <a href="Paginas/Formulario.html" target="blank">Formulario</a>
+            </nav>
+            <hr>
+            <main class="main">
+                <b><p>Elige que quieres ver</p></b>
+                <button onclick="location.href='Paginas/Juegos.html'">Videojuegos</buttom>
+                <button onclick="location.href='Paginas/Anime.html'">Animes</buttom>
+            </main>
+            <hr>
+            <footer class="abajo">
+                <nav>
+                    <a href="https://twitter.com/mipichula11" target="blank"><img src="Imagenes/tw.webp" class="redes"></a> 
+                    <a href="https://www.instagram.com/rlete_11_taicho/" target="blank"><img src="Imagenes/ig.webp" class="redes"></a>
+                    <a href="https://github.com/Thander11" target="blank"><img src="Imagenes/github-brands.svg" class="redes"></a>
+                    <a onclick="window.print()"><img src="Imagenes/print-solid.svg" class="redes"></a>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
