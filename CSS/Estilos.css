@@ -1,0 +1,109 @@
+/*escritura*/
+h1 {color:red; 
+    font-family:'Risque';
+    text-align: center; 
+    font-size: 2rem}
+
+h2 {color:yellow; 
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;}
+
+h3 {color: brown; 
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;}
+
+h4 {margin-left: 5px;}
+
+p {font-family:'Garamond'; 
+    color:violet;}
+
+/*encajado*/
+body {background-image: linear-gradient(45deg, blue, lightblue, white, lightblue, blue);
+    background-attachment:fixed ;}
+
+/*multimedia*/
+img {max-width: 100%;}
+
+video {height:300px; 
+    width: auto;
+    max-width: 100%;}
+
+a {color:greenyellow; 
+    font-family:'Risque';
+    margin:10px;
+    font-size: 20px;}
+        a:hover{color: red;}
+
+button {color:crimson; 
+    font-family:'Risque'; 
+    margin:10px; 
+    background-image: linear-gradient(45deg, red, yellow, red);
+    width: 150px; 
+    height: 150px; 
+    border-radius: 80px; 
+    font-size: 20px;}
+    button:hover {background-image: linear-gradient(45deg, green, yellow, green);}
+
+/*clases*/
+.main {grid-area: main;
+    font-size: 30px;
+    text-align: center;}
+
+.nav {grid-area: nav;
+    background-color: darkblue;
+    border-radius: 50px;
+    text-align: center;}
+
+.cabeza {grid-area:header ;}
+
+.abajo  {grid-area: footer;
+    text-align: center; 
+    background-color: silver; 
+    border-radius: 50px;}
+
+.lado {grid-area: aside;
+    display: flex; 
+    flex-direction: column;
+    background: sandybrown;  
+    margin: 10px;}
+
+.imagen {grid-area: imagen;
+    height: 300px;
+    width: auto;
+    margin: 10px;}
+
+.parrafo {grid-area: parrafo;}
+
+.titulo {grid-area: titulo;
+    text-align: center;}
+
+.grid-container {display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'nav nav nav'
+    'main main main'
+    'footer footer footer';
+    text-align: center;
+    max-width: 100%}
+
+.redes {width: 30px; 
+    height: auto;
+    margin: 20px}
+
+/*otros*/
+@media only screen and (max-width: 600px) {
+    .grid-container {display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    'footer';
+    text-align: center;}
+    
+    nav {width: 100%;}
+
+    footer {width: 100%;}}

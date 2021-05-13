@@ -1,0 +1,98 @@
+
+/*escritura*/
+h1 {color:red; 
+    font-family:'Risque';
+    text-align: center; 
+    font-size: 2rem}
+
+h2 {color:yellow; 
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;}
+
+h3 {color: brown; 
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;}
+
+h4 {margin-left: 5px;}
+
+p {font-family:'Garamond'}
+
+/*encajado*/
+body {background-image: linear-gradient(45deg, blue, lightblue, white, lightblue, blue);
+    background-attachment:fixed ;}
+
+footer {text-align: center; 
+    background-color: silver; 
+    border-radius: 50px;}
+
+aside {display: flex; 
+    flex-direction: column;
+    background: sandybrown; 
+    float: right; 
+    width: 15%; 
+    margin: 10px;}
+
+/*multimedia*/
+img {height:300px;
+     width:auto;
+    max-width: 100%;}
+
+video {height:300px; 
+        width: auto;}
+
+a {color:greenyellow; 
+    font-family:'Risque'; margin:10px}
+        a:hover{color: red;}
+
+/*clases*/
+.imgDerecha {float: right; 
+            margin-right: 20px;}
+
+.encabezado {height:200px; 
+            width: 1887px; 
+            margin-left: 9px;}
+
+.redes {width: 30px; 
+        height: auto;}
+
+.pDerecha {float: right; 
+        margin-right: 20px; 
+        width: 55%;}
+
+.pIzquierda {width: 55%;}
+
+.abajo  {text-align: center; 
+    background-color: silver; 
+    border-radius: 50px;}
+/*otros*/
+table, th, td {margin: auto; 
+            border: 2px solid black}
+
+ul {display: online;}
+
+@media only screen and (max-width: 600px) {
+    body {display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;}
+
+    aside {width: 100%;
+        text-align: center;}
+
+    section {width: 100%;}
+
+    article {display: flex;
+            flex-direction: column;
+            width: 100%;}
+
+    footer {width: 100%;}
+
+    header {width: 100%;}
+
+    img {width: 100%;
+        height: auto;
+        max-width: 100%;}
+
+    .pDerecha {width: 100%;}}
+
+    .encabezado {width: 100%;
+        height: auto;}
